@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhotoEditor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="main-container">
+    <canvas id="canvas">
+    </canvas>
+    <div id="controls-container">
+        <div class="input-container">
+            <label for="file-input" id="file-input-label">
+                UPLOAD FILE
+                <input type="file" id="file-input" accept="image/*">
+            </label>
+        </div>
+        <div class="input-container">
+            <label for="brightness" class="text-label">Brightness</label>
+            <input type="range" id="brightness" class="slider" min="-255" max="255" step="1">
+        </div>
+
+        <div class="input-container">
+            <label for="contrast" class="text-label">Contrast</label>
+            <input type="range" id="contrast" class="slider" min="-128" max="128" step="1">
+        </div>
+        <div class="input-container">
+            <label for="transparent" class="text-label">Transparency</label>
+            <input type="range" id="transparent" class="slider" min="0" max="1" value="1" step="0.1">
+        </div>
+        <div class="input-container" id="save-button-container">
+            <button id="save-button" onclick="downloadCanvas()">SAVE IMAGE</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
