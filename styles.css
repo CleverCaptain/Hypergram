@@ -1,0 +1,60 @@
+#main-container {
+    display: flex;
+}
+
+#controls-container {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: #95B8D1;
+    /*border: red solid 2px;*/
+}
+
+.slider {
+    width: 200%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    /*border: black solid 1px;*/
+    align-items: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#file-input-label {
+    display: flex;
+    background: #EDAFB8;
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    /*border: black solid 2px;*/
+}
+
+#save-button {
+    background-color: #666A86;
+    /*border: blue solid 2px;*/
+    border: none;
+    width: 200px;
+    height: 40px;
+}
+
+/*::-webkit-file-upload-button {*/
+/*    visibility: hidden;*/
+    /*background: black;*/
+    /*color: red;*/
+    /*padding: 1em;*/
+/*}*/
+
+#canvas {
+    width: 70%;
+    height: 96vh;
+    /*border: black solid 2px;*/
+}
