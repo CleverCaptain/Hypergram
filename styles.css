@@ -72,31 +72,37 @@ input[type="file"] {
     #main-container {
         display: flex;
         flex-direction: column;
-        /*border: 5px solid red;*/
+        border: 5px solid red;
+        height: 98vh;
         margin-bottom: 0;
     }
 
     #canvas {
-        height: 70%;
-        width: 96vw;
+        /*height: 70%;*/
+        flex-grow: 2;
+        width: 97vw;
         background-color: #eeeeee;
         border-radius: 10px
     }
 
     #controls-container {
         display: flex;
-        height: 30%;
+        /*height: 30%;*/
+        flex-grow: 1;
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        /*overflow-y: auto;*/
+        gap: 5px;
         background: #393e46;
-        border-radius: 20px;
+        /*border: 5px solid red;*/
+        border-radius: 10px;
     }
 
     .slider {
-        width: 100%;
+        /*width: 100%;*/
+        width: 80vw;
     }
 
     .input-container {
@@ -107,8 +113,12 @@ input[type="file"] {
         align-items: center;
     }
 
-    .slider:active {
-        width: 320%;
+    .io-button {
+        width: 200px;
+        background-color: #0ca200;
+        border-radius: 5px;
+        font: 14px "Century Gothic", serif;
+        color: white;
+        height: 30px;
     }
-
 }

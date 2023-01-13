@@ -88,4 +88,13 @@ window.onload = function () {
     contrast.addEventListener("change", editImage);
     brightness.addEventListener("change", editImage);
     transparency.addEventListener("change", editImage);
+
+    // if (window.innerWidth < window.innerHeight) {
+    //     for (let elementsByClassNameElement of document.getElementsByClassName("slider")) {
+    //         elementsByClassNameElement.addEventListener("change", function () {
+    //             elementsByClassNameElement.style.width = "300%"
+    //
+    //         });
+    //     }
+    // }
 };
