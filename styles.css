@@ -68,7 +68,7 @@ input[type="file"] {
     border-radius: 10px
 }
 
-@media only screen and (max-width:3.1in) {
+@media only screen and (max-device-width: 700px) {
     #main-container {
         display: flex;
         flex-direction: column;
