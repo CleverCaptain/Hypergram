@@ -67,3 +67,48 @@ input[type="file"] {
     background-color: #eeeeee;
     border-radius: 10px
 }
+
+@media only screen and (max-width:3.1in) {
+    #main-container {
+        display: flex;
+        flex-direction: column;
+        border: 5px solid red;
+        margin-bottom: 0;
+    }
+
+    #canvas {
+        height: 70%;
+        width: 96vw;
+        background-color: #eeeeee;
+        border-radius: 10px
+    }
+
+    #controls-container {
+        display: flex;
+        height: 30%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: #393e46;
+        border-radius: 20px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        font: 14px "Century Gothic", serif;
+        color: white;
+        align-items: center;
+    }
+
+    .slider:active {
+        width: 320%;
+    }
+
+}
