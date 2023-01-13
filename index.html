@@ -12,26 +12,30 @@
     </canvas>
     <div id="controls-container">
         <div class="input-container">
-            <label for="file-input" id="file-input-label">
+            <label class="io-button" for="file-input" id="file-input-label">
                 UPLOAD FILE
                 <input type="file" id="file-input" accept="image/*">
             </label>
         </div>
         <div class="input-container">
             <label for="brightness" class="text-label">Brightness</label>
-            <input type="range" id="brightness" class="slider" min="-255" max="255" step="1">
+            <input type="range" id="brightness" class="slider" min="-255" max="255" step="1" oninput="this.nextElementSibling.value=this.value;">
+            <output id="brightness-value">0</output>
+<!--            <input type="range" id="brightness" class="slider" min="-255" max="255" step="1">-->
         </div>
 
         <div class="input-container">
             <label for="contrast" class="text-label">Contrast</label>
-            <input type="range" id="contrast" class="slider" min="-128" max="128" step="1">
+            <input type="range" id="contrast" class="slider" min="-128" max="128" step="1" oninput="this.nextElementSibling.value=this.value;">
+            <output id="contrast-value">0</output>
         </div>
         <div class="input-container">
             <label for="transparent" class="text-label">Transparency</label>
-            <input type="range" id="transparent" class="slider" min="0" max="1" value="1" step="0.1">
+            <input type="range" id="transparent" class="slider" min="0" max="1" value="1" step="0.01" oninput="this.nextElementSibling.value=this.value;">
+            <output id="transparent-value">1</output>
         </div>
         <div class="input-container" id="save-button-container">
-            <button id="save-button" onclick="downloadCanvas()">SAVE IMAGE</button>
+            <button class="io-button" id="save-button" onclick="downloadCanvas()">SAVE IMAGE</button>
         </div>
     </div>
 </div>

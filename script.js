@@ -7,6 +7,7 @@ function downloadCanvas() {
     tmpLink.click();
     document.body.removeChild(tmpLink);
 }
+
 window.onload = function () {
     console.log("running");
     const canvas = document.getElementById("canvas");
@@ -87,59 +88,4 @@ window.onload = function () {
     contrast.addEventListener("change", editImage);
     brightness.addEventListener("change", editImage);
     transparency.addEventListener("change", editImage);
-
-    saveButton
-
-    // contrast.addEventListener('change', function (ev) {
-    //     let val = Number(contrast.value);
-    //     const factor = 259 * (255 + val) / (255 * (259 - val));
-    //     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    //     const pixels = imageData.data;
-    //     let index = 0;
-    //     while (index < pixels.length) {
-    //         if (index % 4 !== 3) {
-    //             pixels[index] = Truncate(factor * (originalPixels[index] - 128) + 128);
-    //         } else {
-    //             pixels[index] = originalPixels[index];
-    //         }
-    //         index++;
-    //     }
-    //     ctx.putImageData(imageData, 0, 0);
-    //     setTimeout(function () {
-    //         changing = false;
-    //     }, 200);
-    // });
-    // brightness.addEventListener('change', function (ev) {
-    //     let val = Number(brightness.value);
-    //     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    //     const pixels = imageData.data;
-    //     let index = 0;
-    //     // console.log(typeof (val));
-    //     while (index < pixels.length) {
-    //         if (index % 4 !== 3) {
-    //             pixels[index] = Truncate(originalPixels[index] + val);
-    //         } else {
-    //             pixels[index] = originalPixels[index];
-    //         }
-    //         index++;
-    //     }
-    //     ctx.putImageData(imageData, 0, 0);
-    //     console.log(originalPixels);
-    // });
-    // transparency.addEventListener('change', function () {
-    //     let val = Number(transparency.value);
-    //     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    //     const pixels = imageData.data;
-    //     let index = 0;
-    //     console.log(val);
-    //     while (index < pixels.length) {
-    //         if (index % 4 === 3) {
-    //             pixels[index] = originalPixels[index] * val;
-    //         } else {
-    //             pixels[index] = originalPixels[index];
-    //         }
-    //         index++;
-    //     }
-    //     ctx.putImageData(imageData, 0, 0);
-    // });
 };

@@ -1,3 +1,7 @@
+body {
+    background-color: #EDAFB8;
+}
+
 #main-container {
     display: flex;
 }
@@ -9,8 +13,8 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background: #95B8D1;
-    /*border: red solid 2px;*/
+    background: #393e46;
+    border-radius: 20px;
 }
 
 .slider {
@@ -20,7 +24,8 @@
 .input-container {
     display: flex;
     flex-direction: column;
-    /*border: black solid 1px;*/
+    font: 18px "Century Gothic", serif;
+    color: white;
     align-items: center;
 }
 
@@ -30,31 +35,35 @@ input[type="file"] {
 
 #file-input-label {
     display: flex;
-    background: #EDAFB8;
-    width: 200px;
-    height: 30px;
+    /*height: 30px;*/
     align-items: center;
     justify-content: center;
     /*border: black solid 2px;*/
 }
 
 #save-button {
-    background-color: #666A86;
     /*border: blue solid 2px;*/
     border: none;
-    width: 200px;
-    height: 40px;
+    /*height: 40px;*/
 }
 
-/*::-webkit-file-upload-button {*/
-/*    visibility: hidden;*/
-    /*background: black;*/
-    /*color: red;*/
-    /*padding: 1em;*/
-/*}*/
+.io-button {
+    width: 200px;
+    background-color: #0ca200;
+    border-radius: 5px;
+    font: 18px "Century Gothic", serif;
+    color: white;
+    height: 35px;
+}
+
+.io-button:hover {
+    background-color: #0f72cb;
+    cursor: pointer;
+}
 
 #canvas {
     width: 70%;
     height: 96vh;
-    /*border: black solid 2px;*/
+    background-color: #eeeeee;
+    border-radius: 10px
 }
