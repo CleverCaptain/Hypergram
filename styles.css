@@ -72,7 +72,7 @@ input[type="file"] {
     #main-container {
         display: flex;
         flex-direction: column;
-        border: 5px solid red;
+        /*border: 5px solid red;*/
         height: 98vh;
         margin-bottom: 0;
     }
