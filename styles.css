@@ -68,11 +68,11 @@ input[type="file"] {
     border-radius: 10px
 }
 
-@media only screen and (max-device-width: 700px) {
+@media only screen and (orientation: portrait) {
     #main-container {
         display: flex;
         flex-direction: column;
-        border: 5px solid red;
+        /*border: 5px solid red;*/
         margin-bottom: 0;
     }
 
